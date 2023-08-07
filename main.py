@@ -151,7 +151,7 @@ def get_director(nombre_director: str):
     return print(info_director)
 
 @app.get('/recomendar_pelicula/{movie_title}')
-def recommend_movies(movie_title, movies, n_recommendations=5):
+def recommend_movies(movie_title, n_recommendations=5):
     # Extraer las características de la película seleccionada
     selected_movie = movies[movies['title'] == movie_title].iloc[0]
 
