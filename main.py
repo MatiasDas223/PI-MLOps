@@ -149,7 +149,8 @@ def get_director(nombre_director: str):
     return print(info_director)
 
 @app.get('/recomendar_pelicula/{movie_title}')
-def recomendacion(movie_title, n_recommendations=5):
+def recomendacion(movie_title: str, n_recommendations=5):
+
     # Extraer las características de la película seleccionada
     selected_movie = movies[movies['title'] == movie_title].iloc[0]
 
@@ -177,4 +178,4 @@ def recomendacion(movie_title, n_recommendations=5):
     titles = titles[0:4] 
     return f"Las películas similares a {movie_title} son: {', '.join(titles)}"
 
-movies['director']
+recomendacion('Toy Story', 5)
