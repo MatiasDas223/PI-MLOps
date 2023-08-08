@@ -32,23 +32,41 @@ El script de ETL limpia y procesa los datos de películas obtenidos de archivos 
 
 Finalmente, se exporta un archivo CSV con los datos limpios y procesados.
 
+## Análisis Exploratorio de Datos (EDA)
+
+El Análisis Exploratorio de Datos (EDA) es un enfoque crucial en este proyecto que nos ayuda a entender las principales características, estructuras, relaciones y patrones dentro de los datos de películas. A través del EDA, aplicamos técnicas estadísticas y gráficas para descubrir cómo están distribuidos los datos, identificar posibles anomalías, y extraer información valiosa que puede ser útil en la fase de modelado.
+
+Las etapas clave del EDA en este proyecto incluyen:
+
+- Resumen Estadístico: Analizamos las estadísticas descriptivas de las variables clave, como la media, mediana, rango y desviación estándar.
+
+- Visualización de Datos: Utilizamos gráficos como histogramas, diagramas de caja, y gráficos de dispersión para visualizar la distribución de datos y las relaciones entre diferentes características.
+
+- Análisis de Correlación: Examinamos las correlaciones entre las diferentes variables para entender cómo están relacionadas entre sí.
+
+- Identificación de Valores Atípicos: Usamos métodos gráficos y estadísticos para detectar posibles valores atípicos que puedan afectar el rendimiento del modelo.
+
+- Análisis de Tendencias y Patrones: Identificamos tendencias y patrones clave en los datos, como la popularidad de géneros, la relación entre el presupuesto y la recaudación, y el impacto de los directores y actores en el éxito de una película.
+
+- Preparación para Modelado: A través del EDA, preparamos los datos para el proceso de modelado, eligiendo las características relevantes y asegurando que los datos estén en un formato adecuado para el entrenamiento del modelo.
+
+El EDA es un paso esencial que informa nuestra estrategia de modelado y nos permite desarrollar un sistema de recomendación más efectivo y preciso. Las visualizaciones y análisis realizados en esta etapa están disponibles en un notebook Jupyter separado, proporcionando una revisión detallada y comprensible de los datos.
+
 ## API
 
-La API se implementa con FastAPI y proporciona varios endpoints para acceder a los datos de películas. Aquí están los endpoints disponibles:
+La API se implementa con FastAPI y está alojada en Render, proporcionando varios endpoints para acceder a los datos de películas y a la función de recomendación. Aquí están los endpoints disponibles:
 
 - /peliculas_idioma/{idioma}: Devuelve la cantidad de películas con un idioma original dado.
-
 - /peliculas_duracion/{title}: Devuelve la duración y el año de lanzamiento de una película con un título específico.
-
 - /peliculas_franquicia/{franq}: Devuelve el número de películas y la ganancia total para una franquicia de películas dada.
-
 - /peliculas_pais/{pais}: Devuelve el número de películas producidas en un país específico.
-
 - /productoras_exitosas/{productora}: Devuelve el ingreso total y el número de películas para una productora específica.
-
 - /director/{nombre_director}: Devuelve información detallada sobre las películas dirigidas por un director en particular.
+- /recomendar_pelicula/{movie_title}: Utiliza varias características de la película (como la colección, el tópico, el género y las palabras clave) para calcular la similitud con otras películas y recomendar las más similares. La función devuelve una lista con los nombres de las películas recomendadas.
+  
+La implementación de la API está diseñada para ser robusta y escalable, facilitando la integración con aplicaciones front-end y permitiendo una fácil extensión con nuevas características y funcionalidades en el futuro.
 
-
+El despliegue en Render asegura una alta disponibilidad y rendimiento, permitiendo un acceso eficiente y rápido a los datos y a las recomendaciones de películas desde cualquier parte del mundo.
 
 ### Requisitos
 
