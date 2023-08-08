@@ -77,8 +77,10 @@ El despliegue en Render asegura una alta disponibilidad y rendimiento, permitien
 
 ### Fuente de datos
 
-movies_dataset.csv: Contiene datos sobre las películas.
-credits.csv: Contiene créditos de películas, incluyendo actores y equipo.
+- movies_dataset.csv: Contiene datos sobre las películas.
+- credits.csv: Contiene créditos de películas, incluyendo actores y equipo.
+
+Drive con los archivos: https://drive.google.com/drive/folders/1mfUVyP3jS-UMdKHERknkQ4gaCRCO2e1v
 
 ### Contacto
 
