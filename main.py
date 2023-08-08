@@ -2,9 +2,7 @@ import pandas as pd
 from fastapi import FastAPI
 import ast
 
-movies = pd.read_csv('movies.csv')
-
-movies
+movies = pd.read_parquet('movies.parquet')
 
 app = FastAPI()
 
