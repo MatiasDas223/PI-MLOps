@@ -177,5 +177,3 @@ def recomendacion(movie_title: str):
     titles = top_n['title'].tolist()
     titles = titles[0:4] 
     return f"Las películas similares a {movie_title} son: {', '.join(titles)}"
-
-recomendacion('Toy Story', 5)
