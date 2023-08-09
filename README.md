@@ -1,12 +1,12 @@
-# Proyecto MLOps de Streaming: Sistema de Recomendación y Análisis de Datos
+# 🎬Proyecto MLOps de Streaming: Sistema de Recomendación y Análisis de Datos📽️
 
 Bienvenidos a este proyecto MLOps, donde construiremos una API para extraer datos útiles desde un conjunto de datos de películas, y usaremos Machine Learning para construir un sistema de recomendaciones. En este proyecto, nos centraremos en las operaciones de MLOps y aprenderemos a implementar y mantener un modelo de ML en un entorno de producción.
 
-## Descripción del proyecto
+## 🎯Descripción del proyecto
 
 Este proyecto es un sistema de recomendación de películas para una startup de agregación de plataformas de streaming. El proyecto implica un trabajo de Data Engineering inicial para limpiar y transformar los datos y, a continuación, el desarrollo de una API para facilitar consultas de datos y el uso de un modelo de Machine Learning.
 
-## Procedimiento
+## ✅Procedimiento
 
 - Preprocesamiento de datos: Limpiaremos y transformaremos los datos según las especificaciones dadas.
 
@@ -18,7 +18,7 @@ Este proyecto es un sistema de recomendación de películas para una startup de 
 
 - Sistema de recomendación: Utilizaremos nuestro EDA y los datos para entrenar un modelo de Machine Learning que pueda recomendar películas basándose en la similitud de las películas.
 
-## ETL
+## 🛠️ETL
 
 El script de ETL limpia y procesa los datos de películas obtenidos de archivos CSV. Realiza las siguientes acciones:
 
@@ -32,7 +32,7 @@ El script de ETL limpia y procesa los datos de películas obtenidos de archivos 
 
 Finalmente, se exporta un archivo CSV con los datos limpios y procesados.
 
-## Análisis Exploratorio de Datos (EDA)
+## 📊Análisis Exploratorio de Datos (EDA)
 
 El Análisis Exploratorio de Datos (EDA) es un enfoque crucial en este proyecto que nos ayuda a entender las principales características, estructuras, relaciones y patrones dentro de los datos de películas. A través del EDA, aplicamos técnicas estadísticas y gráficas para descubrir cómo están distribuidos los datos, identificar posibles anomalías, y extraer información valiosa que puede ser útil en la fase de modelado.
 
@@ -52,7 +52,7 @@ Las etapas clave del EDA en este proyecto incluyen:
 
 El EDA es un paso esencial que informa nuestra estrategia de modelado y nos permite desarrollar un sistema de recomendación más efectivo y preciso. Las visualizaciones y análisis realizados en esta etapa están disponibles en un notebook Jupyter separado, proporcionando una revisión detallada y comprensible de los datos.
 
-## API
+## 📡API
 
 La API se implementa con FastAPI y está alojada en Render, proporcionando varios endpoints para acceder a los datos de películas y a la función de recomendación. Aquí están los endpoints disponibles:
 
@@ -68,22 +68,22 @@ La implementación de la API está diseñada para ser robusta y escalable, facil
 
 El despliegue en Render asegura una alta disponibilidad y rendimiento, permitiendo un acceso eficiente y rápido a los datos y a las recomendaciones de películas desde cualquier parte del mundo.
 
-### Requisitos
+### 📋Requisitos
 
 - Python 3.7+
 - FastAPI
 - Render, Railway o similar para el despliegue
 - Librerías de ciencia de datos y ML como pandas, numpy, scikit-learn
 
-### Fuente de datos
+### 📚Fuente de datos
 
 - movies_dataset.csv: Contiene datos sobre las películas.
 - credits.csv: Contiene créditos de películas, incluyendo actores y equipo.
 
-Drive con los archivos: https://drive.google.com/drive/folders/1mfUVyP3jS-UMdKHERknkQ4gaCRCO2e1v
+[Drive con los archivos](https://drive.google.com/drive/folders/1mfUVyP3jS-UMdKHERknkQ4gaCRCO2e1v)
 
-### Contacto
+### 📞Contacto
 
 Si tienes alguna pregunta o problema con el proyecto, no dudes en contactarme.
 
-Linkedin: https://www.linkedin.com/in/matiasdasilva92/
+[Linkedin 💌] (https://www.linkedin.com/in/matiasdasilva92/)
