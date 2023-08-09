@@ -164,7 +164,7 @@ def recomendacion(movie_title: str):
     similarity += movies['genero_names'].apply(lambda x: sum(g in x for g in selected_movie['genero_names'])) * 0.2
 
     # Calcular similitud basada en palabras clave
-    similarity += movies['keywords_cleaned'].apply(lambda x: sum(k in x for k in selected_movie['keywords_cleaned'])) * 0.5
+    similarity += movies['keywords_cleaned'].apply(lambda x: sum(k in x for k in selected_movie['keywords_cleaned'])) * 0.1
 
     # Excluir la película seleccionada
     similarity[selected_movie.name] = 0
