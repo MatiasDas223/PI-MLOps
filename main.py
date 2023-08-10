@@ -145,7 +145,8 @@ def get_director(nombre_director: str):
         pelicula = f"- {row['title']}, {row['release_year']}, Retorno: {row['return']}, Costo: {row['budget']}, Ganancia: {row['revenue']}"
         peliculas_info.append(pelicula)
 
-    info_director = f"Nombre del director: {nombre_director} Retorno total: {retorno_total} Películas dirigidas:".join(peliculas_info)
+    peliculas_str = "\n".join(peliculas_info)
+    info_director = f"Nombre del director: {nombre_director}\nRetorno total: {retorno_total}\nPelículas dirigidas:\n{peliculas_str}"
     return info_director
 
 @app.get('/recomendar_pelicula/{movie_title}')
